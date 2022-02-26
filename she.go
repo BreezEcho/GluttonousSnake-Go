@@ -99,7 +99,7 @@ func (s *Snake) PlayGame() {
 		}
 
 		// 蛇头和墙体碰撞判断
-		if s.pos[0].X < 1 || s.pos[0].Y < 0+1 || s.pos[0].X >= WIDE+1 || s.pos[0].Y >= HIGH+1 {
+		if s.pos[0].X < 0+1 || s.pos[0].Y < 0 || s.pos[0].X >= WIDE+1 || s.pos[0].Y >= HIGH {
 			return
 		}
 		// 蛇头和身体判断
